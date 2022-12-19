@@ -1,0 +1,897 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+  }
+  html body {
+    width: 100%;
+  }
+  html body header {
+    text-transform: uppercase;
+    width: 100%;
+  }
+  html body header nav {
+    background-color: rgb(39, 38, 64);
+    height: 17vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+  }
+  html body header nav figure {
+    grid-column: 1/4;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+  html body header nav figure img {
+    height: 7vh;
+    text-align: center;
+  }
+  html body header nav h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    grid-column: 1/4;
+  }
+  html body header nav ul {
+    list-style: none;
+    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2/3;
+  }
+  html body header nav ul li {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  html body header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  html body header section {
+    background-image: linear-gradient(to bottom, rgba(27, 58, 75, 0.9), rgba(39, 38, 64, 0.9), rgba(77, 25, 77, 0.9)), url("cemetery.jpeg");
+    background-size: 100%;
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  html body header section h2 {
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+  }
+  html body header section h3 {
+    padding-top: 4rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  html body header section figure img {
+    height: 40vh;
+  }
+  html body main {
+    width: 100%;
+  }
+  html body main > section:first-of-type {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    background: linear-gradient(to bottom, rgb(77, 25, 77), rgb(39, 38, 64), rgb(27, 58, 75));
+    background-size: 100%;
+    text-align: center;
+  }
+  html body main > section:first-of-type section {
+    width: 90%;
+  }
+  html body main > section:first-of-type figure img {
+    height: 14vh;
+  }
+  html body main > section:first-of-type h2 {
+    grid-row: 1/2;
+    grid-column: 1/6;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    padding-bottom: 2.3rem;
+    font-weight: bold;
+  }
+  html body main > section:first-of-type h3 {
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  html body main > section:first-of-type h4 {
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  html body main > section:first-of-type p {
+    font-weight: 300;
+  }
+  html body main > section:first-of-type section:first-of-type {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  html body main > section:first-of-type section:nth-of-type(2) {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  html body main > section:first-of-type section:nth-of-type(3) {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+  html body main > section:first-of-type section:nth-of-type(4) {
+    grid-row: 3/4;
+    grid-column: 3/4;
+  }
+  html body main > section:first-of-type section:nth-of-type(5) {
+    grid-row: 2/3;
+    grid-column: 4/5;
+  }
+  html body main > section:first-of-type section:nth-of-type(6) {
+    grid-row: 3/4;
+    grid-column: 4/5;
+  }
+  html body main > section:nth-of-type(2) {
+    height: 200vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 4fr 4fr;
+    background: linear-gradient(to bottom, rgb(27, 58, 75), rgb(39, 38, 64), rgb(77, 25, 77));
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  html body main > section:nth-of-type(2) ul {
+    line-height: 2rem;
+  }
+  html body main > section:nth-of-type(2) ul li:first-of-type {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  html body main > section:nth-of-type(2) ul li:nth-of-type(2) {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+  }
+  html body main > section:nth-of-type(2) ul li:nth-of-type(3) {
+    font-weight: 500;
+  }
+  html body main > section:nth-of-type(2) h2 {
+    grid-row: 1/2;
+    grid-column: 1/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2.3rem;
+  }
+  html body main > section:nth-of-type(2) ul:first-of-type {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  html body main > section:nth-of-type(2) ul:nth-of-type(2) {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+  html body main > section:nth-of-type(2) ul:nth-of-type(3) {
+    grid-row: 2/3;
+    grid-column: 4/5;
+  }
+  html body main > section:nth-of-type(2) ul:nth-of-type(4) {
+    grid-row: 2/3;
+    grid-column: 5/6;
+  }
+  html body main > section:nth-of-type(2) figure {
+    grid-row: 3/4;
+    grid-column: 1/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html body main > section:nth-of-type(2) figure img {
+    height: 40vh;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type {
+    width: 100%;
+    text-transform: uppercase;
+    grid-row: 4/5;
+    grid-column: 2/6;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 4rem;
+    padding-top: 8rem;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type ul {
+    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type ul li figure {
+    padding-top: 2rem;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type ul li figure img {
+    height: 16vh;
+  }
+  html body footer {
+    width: 100%;
+  }
+  html body footer nav {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    background-color: rgb(39, 38, 64);
+    height: 20vh;
+  }
+  html body footer nav figure {
+    grid-column: 1/4;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+  html body footer nav figure img {
+    height: 7vh;
+    text-align: center;
+  }
+  html body footer nav h4 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+    grid-column: 1/4;
+  }
+  html body footer nav ul {
+    list-style: none;
+    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2/3;
+  }
+  html body footer nav ul li {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  html body footer nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+@media (max-width: 1199px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+  }
+  html body {
+    width: 100%;
+  }
+  html body header {
+    text-transform: uppercase;
+    width: 100%;
+  }
+  html body header nav {
+    background-color: rgb(39, 38, 64);
+    height: 17vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+  }
+  html body header nav figure {
+    grid-column: 1/4;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+  html body header nav figure img {
+    height: 7vh;
+    text-align: center;
+  }
+  html body header nav h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    grid-column: 1/4;
+  }
+  html body header nav ul {
+    list-style: none;
+    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2/3;
+  }
+  html body header nav ul li {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  html body header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  html body header section {
+    background-image: linear-gradient(to bottom, rgba(27, 58, 75, 0.9), rgba(39, 38, 64, 0.9), rgba(77, 25, 77, 0.9)), url("cemetery.jpeg");
+    background-size: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  html body header section h2 {
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+  }
+  html body header section h3 {
+    padding-top: 4rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  html body header section figure {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  html body header section figure img {
+    height: 30vh;
+  }
+  html body main {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  html body main > section:first-of-type {
+    height: 100%;
+    grid-row: 1/2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr;
+    background: linear-gradient(to bottom, rgb(77, 25, 77), rgb(39, 38, 64), rgb(27, 58, 75));
+    background-size: 100%;
+    text-align: center;
+  }
+  html body main > section:first-of-type section {
+    width: 90%;
+  }
+  html body main > section:first-of-type figure img {
+    height: 14vh;
+  }
+  html body main > section:first-of-type h2 {
+    grid-row: 1/2;
+    grid-column: 1/6;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    padding-bottom: 2.3rem;
+    font-weight: bold;
+  }
+  html body main > section:first-of-type h3 {
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  html body main > section:first-of-type h4 {
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  html body main > section:first-of-type p {
+    font-weight: 300;
+  }
+  html body main > section:first-of-type section:first-of-type {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  html body main > section:first-of-type section:nth-of-type(2) {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  html body main > section:first-of-type section:nth-of-type(3) {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+  html body main > section:first-of-type section:nth-of-type(4) {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+  html body main > section:first-of-type section:nth-of-type(5) {
+    grid-row: 3/4;
+    grid-column: 3/4;
+  }
+  html body main > section:first-of-type section:nth-of-type(6) {
+    grid-row: 4/5;
+    grid-column: 3/4;
+  }
+  html body main > section:nth-of-type(2) {
+    height: 100%;
+    width: 100%;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 4fr 4fr;
+    background: linear-gradient(to bottom, rgb(27, 58, 75), rgb(39, 38, 64), rgb(77, 25, 77));
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  html body main > section:nth-of-type(2) ul {
+    line-height: 2rem;
+  }
+  html body main > section:nth-of-type(2) ul li:first-of-type {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  html body main > section:nth-of-type(2) ul li:nth-of-type(2) {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+  }
+  html body main > section:nth-of-type(2) ul li:nth-of-type(3) {
+    font-weight: 500;
+  }
+  html body main > section:nth-of-type(2) h2 {
+    grid-row: 1/2;
+    grid-column: 1/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2.3rem;
+  }
+  html body main > section:nth-of-type(2) ul:first-of-type {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  html body main > section:nth-of-type(2) ul:nth-of-type(2) {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+  html body main > section:nth-of-type(2) ul:nth-of-type(3) {
+    grid-row: 2/3;
+    grid-column: 4/5;
+  }
+  html body main > section:nth-of-type(2) ul:nth-of-type(4) {
+    grid-row: 2/3;
+    grid-column: 5/6;
+  }
+  html body main > section:nth-of-type(2) figure {
+    grid-row: 3/4;
+    grid-column: 1/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html body main > section:nth-of-type(2) figure img {
+    height: 40vh;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type {
+    width: 100%;
+    text-transform: uppercase;
+    grid-row: 4/5;
+    grid-column: 2/6;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 4rem;
+    padding-top: 8rem;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type ul {
+    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type ul li figure {
+    padding-top: 2rem;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type ul li figure img {
+    height: 14vh;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type ul li:nth-of-type(odd) {
+    grid-row: 1/2;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type ul li:nth-of-type(even) {
+    grid-row: 2/3;
+  }
+  html body footer {
+    width: 100%;
+  }
+  html body footer nav {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    background-color: rgb(39, 38, 64);
+    height: 20vh;
+  }
+  html body footer nav figure {
+    grid-column: 1/4;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+  html body footer nav figure img {
+    height: 7vh;
+    text-align: center;
+  }
+  html body footer nav h4 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+    grid-column: 1/4;
+  }
+  html body footer nav ul {
+    list-style: none;
+    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2/3;
+  }
+  html body footer nav ul li {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  html body footer nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+  }
+  html body {
+    width: 100%;
+  }
+  html body header {
+    text-transform: uppercase;
+    width: 100%;
+  }
+  html body header nav {
+    background-color: rgb(39, 38, 64);
+    height: 17vh;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+  }
+  html body header nav figure {
+    grid-column: 1/4;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+  html body header nav figure img {
+    height: 7vh;
+    text-align: center;
+  }
+  html body header nav h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    grid-column: 1/4;
+  }
+  html body header nav ul {
+    list-style: none;
+    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2/3;
+  }
+  html body header nav ul li {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  html body header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  html body header section {
+    background-image: linear-gradient(to bottom, rgba(27, 58, 75, 0.9), rgba(39, 38, 64, 0.9), rgba(77, 25, 77, 0.9)), url("cemetery.jpeg");
+    background-size: 100%;
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  html body header section h2 {
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+  }
+  html body header section h3 {
+    padding-top: 4rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  html body header section figure img {
+    height: 20vh;
+  }
+  html body main {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  html body main > section:first-of-type {
+    grid-row: 1/2;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background: linear-gradient(to bottom, rgb(77, 25, 77), rgb(39, 38, 64), rgb(27, 58, 75));
+    background-size: 100%;
+    text-align: center;
+  }
+  html body main > section:first-of-type section {
+    width: 90%;
+    padding-top: 4vh;
+  }
+  html body main > section:first-of-type figure img {
+    height: 14vh;
+  }
+  html body main > section:first-of-type h2 {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    padding-bottom: 2.3rem;
+    font-weight: bold;
+  }
+  html body main > section:first-of-type h3 {
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  html body main > section:first-of-type h4 {
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  html body main > section:first-of-type p {
+    font-weight: 300;
+  }
+  html body main > section:first-of-type section:first-of-type {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  html body main > section:first-of-type section:nth-of-type(2) {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  html body main > section:first-of-type section:nth-of-type(3) {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+  html body main > section:first-of-type section:nth-of-type(4) {
+    grid-row: 5/6;
+    grid-column: 2/3;
+  }
+  html body main > section:first-of-type section:nth-of-type(5) {
+    grid-row: 6/7;
+    grid-column: 2/3;
+  }
+  html body main > section:first-of-type section:nth-of-type(6) {
+    grid-row: 7/8;
+    grid-column: 2/3;
+  }
+  html body main > section:nth-of-type(2) {
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr 2fr;
+    background: linear-gradient(to bottom, rgb(27, 58, 75), rgb(39, 38, 64), rgb(77, 25, 77));
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  html body main > section:nth-of-type(2) ul {
+    line-height: 2rem;
+  }
+  html body main > section:nth-of-type(2) ul li:first-of-type {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  html body main > section:nth-of-type(2) ul li:nth-of-type(2) {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+  html body main > section:nth-of-type(2) ul li:nth-of-type(3) {
+    font-weight: 500;
+  }
+  html body main > section:nth-of-type(2) h2 {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2.3rem;
+  }
+  html body main > section:nth-of-type(2) ul:first-of-type {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  html body main > section:nth-of-type(2) ul:nth-of-type(2) {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+  html body main > section:nth-of-type(2) ul:nth-of-type(3) {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  html body main > section:nth-of-type(2) ul:nth-of-type(4) {
+    grid-row: 3/4;
+    grid-column: 3/4;
+  }
+  html body main > section:nth-of-type(2) figure {
+    grid-row: 4/5;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html body main > section:nth-of-type(2) figure img {
+    height: 20vh;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type {
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    grid-row: 5/6;
+    grid-column: 2/4;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 4rem;
+    padding-top: 8rem;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type ul {
+    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type ul li figure {
+    margin-top: 5rem;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type ul li figure img {
+    height: 10vh;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type ul li:nth-of-type(odd) {
+    grid-row: 1/2;
+  }
+  html body main > section:nth-of-type(2) > section:last-of-type ul li:nth-of-type(even) {
+    grid-row: 2/3;
+  }
+  html body footer {
+    width: 100%;
+  }
+  html body footer nav {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    background-color: rgb(39, 38, 64);
+    height: 20vh;
+  }
+  html body footer nav figure {
+    grid-column: 1/4;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+  html body footer nav figure img {
+    height: 7vh;
+    text-align: center;
+  }
+  html body footer nav h4 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+    grid-column: 1/4;
+  }
+  html body footer nav ul {
+    list-style: none;
+    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2/3;
+  }
+  html body footer nav ul li {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  html body footer nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
